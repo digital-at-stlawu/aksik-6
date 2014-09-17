@@ -1,0 +1,49 @@
+/* $Id: ie.css,v 1.3 2008/12/01 05:35:59 johnalbin Exp $ */
+
+/*
+ * CSS targeted specifically for Internet Explorer for Windows.
+ *
+ * Any CSS in this file will apply to all versions of IE. You can target
+ * specific versions of IE by using conditional comments. See your sub-theme's
+ * .info file for an easy way to use them.
+ */
+ #navbar
+ {
+   border: 1px solid #fff;
+ }
+
+/* Tabs */
+
+  ul.primary li a,
+  ul.primary li a .tab,
+  ul.secondary li a,
+  ul.secondary li a .tab
+  {
+    cursor: pointer;
+  }
+
+/** Drupal nodes **/
+  .node-unpublished .node-inner>*
+  {
+    position: relative; /* Otherwise these elements will appear below the "Unpublished" text. */
+  }
+
+/** Drupal admin tables **/
+  .section-admin #content tr.even th,
+  .section-admin #content tr.even td,
+  .section-admin #content tr.odd th,
+  .section-admin #content tr.odd td
+  {
+    border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+  }
+  
+/*
+ * Transparent image hack (for pager buttons) and path needs to be relative to server, not drupal
+ */
+ 
+* img, 
+* div
+{ 
+  behavior: url(/sites/default/themes/austin/iepngfix.htc);
+  width: auto;
+}

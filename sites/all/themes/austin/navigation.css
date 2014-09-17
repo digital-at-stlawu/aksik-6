@@ -1,0 +1,249 @@
+/**
+ * All navigational elements, menus
+ */
+ 
+ul.menu
+{
+  padding: 0; /* unset 2em from system.css */
+}
+ 
+#navbar ul.links a
+{
+  color: #5a584d;
+  border: none;
+}
+
+/* Main navigation tabs */
+#navbar #primary
+{
+  float: left;
+  width: 100%;
+}
+
+#navbar #primary ul
+{
+  /*float: left;
+  width: 982px;*/
+}
+
+#navbar #primary li a
+{
+  padding: 10px 21px 8px 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  font-size: 1em; /* 12px x 1.5 = 18px */
+  line-height: 1.5em;
+}
+
+#navbar #secondary
+{
+  background-color: #75AF10;
+  width: 100%;
+  float: left;
+}
+
+
+#navbar #secondary li
+{
+  padding: 0 22px 8px 0;
+  margin: 0;
+  text-transform: none;
+  font-style: italic;
+  display: inline;
+}
+
+#navbar #secondary li a
+{
+  text-decoration: none;
+  padding: 10px 21px 8px 21px; 
+  line-height: 1.5em;
+  color: #fff;
+}
+
+ul.menu .content
+{
+    font-size: .92em; /* 11px x 2.45 = 27px */
+    line-height: 1.3em;
+    font-family: Lucida Sans, Lucida Grande, Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    color: #333;
+    /*margin-top: 0.769em; /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
+    /*margin-bottom: 0.769em;*/
+}
+
+#sidebar-left ul.menu li a.active, /* The active item in a Drupal menu */
+#sidebar-right ul.menu li a.active /* The active item in a Drupal menu */
+{
+  background-image: url(images/subnav_active.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+#sidebar-left ul.menu li a:hover, /* The hover item in a Drupal menu */
+#sidebar-right ul.menu li a:hover /* The hover item in a Drupal menu */
+{
+  background-image: url(images/subnav_active.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+ul.menu li a
+{
+  color: #333;
+  border: none;
+  padding: 5px 22px;
+  display: block;
+}
+
+ul.menu li
+{
+  background-color: #e4e3dd;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+ul.menu li.expanded ul
+{
+  border-top: 1px solid #fff;
+}
+
+ul.menu li li
+{
+  background-color: #f0efe9;
+  padding: 0;
+  text-transform: none;
+}
+
+/* level 2 */
+ul.menu li li a
+{
+  padding: 5px 30px;
+}
+
+/* level 3 */
+ul.menu li li li a
+{
+  padding: 5px 38px;
+}
+
+/* level 4 */
+ul.menu li li li li a
+{
+  padding: 5px 46px;
+}
+
+/* level 5 */
+ul.menu li li li li a
+{
+  padding: 5px 54px;
+}
+
+ul.menu li.expanded ul li.last
+{
+  border-bottom: none;
+}
+#navbar .view-cycle-pager
+{
+  float: right;
+  width: 280px;
+}
+
+#navbar .views-cycle-container
+{
+  float: left;
+}
+
+
+#navbar #promo-banner #views-cycle-promos-block_1-nav ul li
+{
+  float: none;
+  padding: 0 22px;
+  text-transform: uppercase;
+  color: #65645f;
+  font-size: .92em;
+  line-height: 2.4em;
+  height: 25px;
+  width: 214px;
+  margin: 8px 0;
+}
+
+#navbar #promo-banner #views-cycle-promos-block_1-nav li a/* Promo slider nav */
+{
+  color: #666;
+  border: none;
+  padding: 0 22px;
+}
+
+
+#navbar #promo-banner #views-cycle-promos-block_1-nav li a.activeSlide/* Promo slider nav */
+{
+  background-image: url(images/slider_arrow.png);
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 170px;
+  display: block;
+  border: none;
+  color: #65645f;
+}
+
+#navbar #promo-banner #views-cycle-promos-block_1-nav li a:hover/* Promo slider nav */
+{
+  background-image: url(images/slider_arrow.png);
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 214px;
+  display: block;
+  border: none;
+  color: #65645f;
+}
+
+#navbar #promo-banner  #views-cycle-promos-block_1 li
+{
+  width: 595px;
+  color: #3c3c37;
+  font-size: 1.75em; /* 21px x 1.428 = 30px */
+  line-height: 1.428em;
+  font-family: Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
+  font-weight: normal;
+  text-transform: none;
+  margin: 0;
+  /*margin-top: 0.667em; /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
+  /*margin-bottom: 0.667em;*/
+}
+
+#navbar #promo-banner  #views-cycle-promos-block_1 li p
+{
+  margin: 0;
+}
+
+#footer ul
+{
+  padding: 0;
+  margin: 0;
+}
+#footer li,
+#footer .block-menu li,
+#footer .block-menu_block li,
+#footer .logged-in .block-user li,
+#footer .block-og .item-list ul li
+
+{
+  border: none;
+  float: left;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+#footer .block-menu li a,
+#footer .block-menu_block li a,
+#footer .logged-in .block-user li a,
+#footer .block-og .item-list ul li a
+{
+  color: #333;
+  border: none;
+  padding: 0 20px 0 0;
+  display: inline;
+}

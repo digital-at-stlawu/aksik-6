@@ -1,0 +1,77 @@
+name        = Austin theme
+description = Zen subtheme created for SXSW CMS Showdown, designed by Mark Boulton.
+
+screenshot = screenshot.png
+
+core       = 6.x
+base theme = zen
+
+stylesheets[all][]   = layout.css
+stylesheets[all][]   = html-elements.css
+stylesheets[all][]  = tabs.css
+; stylesheets[all][]  = block-editing.css
+stylesheets[all][]  = blocks.css
+; stylesheets[all][]  = wireframes.css
+stylesheets[all][]   = sitetheme.css
+stylesheets[all][]   = background.css
+stylesheets[all][]   = navigation.css
+stylesheets[all][]   = pages.css
+stylesheets[all][]   = view-styles.css
+stylesheets[all][]   = forms.css
+stylesheets[all][]   = austin.css
+stylesheets[all][]   = messages.css
+stylesheets[all][]   = fields.css
+stylesheets[all][]   = colors.css
+stylesheets[all][]   = colors_opt2.css
+stylesheets[all][]   = custom.css
+stylesheets[print][] = print.css
+
+  ; Remove the zen.css file.
+stylesheets[all][]   = zen.css
+
+  ; Set the conditional stylesheets that are processed by IE.
+conditional-stylesheets[if IE][all][] = ie.css
+conditional-stylesheets[if lte IE 6][all][] = ie6.css
+conditional-stylesheets[if lte IE 5][all][] = ie5.css
+
+scripts[] = scripts.js
+
+regions[left]           = left sidebar
+regions[right]          = right sidebar
+regions[navbar]         = navigation bar
+regions[content_top]    = content top
+regions[content_bottom] = content bottom
+regions[header]         = header
+regions[footer]         = footer
+regions[closure_region] = closure
+regions[promo]          = promo banner
+regions[post_state]     = positioning statement
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
+
+  ; Set the default settings to be used in theme-settings.php
+settings[zen_block_editing]        = 1
+settings[zen_breadcrumb]           = yes
+settings[zen_breadcrumb_separator] = ', '
+settings[zen_breadcrumb_home]      = 1
+settings[zen_breadcrumb_trailing]  = 1
+settings[zen_breadcrumb_title]     = 0
+settings[zen_rebuild_registry]     = 1
+settings[zen_wireframes]           = 0
+settings[austin_color_option]      = 0
+
+; Information added by drupal.org packaging script on 2010-08-26
+version = "6.x-1.0"
+core = "6.x"
+project = "austin"
+datestamp = "1282862504"
+

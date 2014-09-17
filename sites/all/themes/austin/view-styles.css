@@ -1,0 +1,271 @@
+/* views UI */
+
+
+/*Unformatted layout*/
+.views-row-odd,
+.views-row-even,
+.front .node /* Node wrapper on front page view */
+{
+  margin-bottom: 30px;
+}
+
+/*Grid layout */
+table.views-view-grid/* General view grid style (commonly used for photo galleries.) */
+{
+  margin: 0 0 22px 0;
+  padding: 0;
+  width: auto;
+}
+
+table.views-view-grid td
+{
+  padding: 0 22px 22px 0;
+}
+
+table.views-view-grid td .views-field-field-image-fid
+{
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.view-galleries .views-field-title
+{
+  text-transform: none;
+  font-style: italic;
+}
+
+.views-field-field-image-fid a
+{
+  width: 100%;
+}
+
+.views-field-field-image-fid a img
+{
+  border: 3px solid #e4e3dd;
+}
+
+
+.views-edit-view a
+{
+  border: none;
+}
+
+/* Home page */
+.front .view .form-item
+{
+  margin: 0;
+}
+
+.front .views-field-name, /* news meta data */
+.front .views-field-created, /* news creation date */
+.front .views-field-field-eventdate-value /* event date */
+{
+  font-size: .92em; /* 11px x 1.727 = 19px */
+  line-height: 1.727em;
+  font-family: Lucida Grande, Lucida Sans, Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
+  margin: 0;
+  color: #666666;
+  font-style: italic;
+}
+
+.front .view-content
+{
+  float: left;
+  margin-bottom: 30px;
+}
+
+.front .view .attachment-after
+{
+  clear: left;
+  float: left;
+}
+
+.front .view .attachment-after .item-list li
+{
+  width: 171px;
+  margin-right: 22px;
+  list-style-type: none;
+  float: left;
+}
+
+/*.view-id-homepage.view-display-id-node_content_2
+{
+  clear: both;
+}*/
+
+/*.view-id-homepage.view-display-id-node_content_2 .item-list li
+{
+  list-style-type: none;
+  float: none;
+  clear: left;
+}*/
+
+
+/*.view-id-homepage .views-field-name,
+.view-id-homepage.view-display-id-node_content_2 .views-field-field-eventdate-value
+{
+  float: left;
+  padding: 0 6px 0 0;
+}*/
+
+.front .view .form-item label
+{
+  text-transform: uppercase;
+  font-size: .92em; /* 11px x 1.636 = 18px */
+  line-height: 1.727em;
+  font-family: Lucida Grande, Lucida Sans, Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
+  margin: 0;
+  padding: 8px 0 10px 0;
+  color: #666666;
+  border-top: 1px solid #ccc;
+  clear: both;
+}
+
+.front #sidebar-right .form-item label, /* Override too general style above */
+.front #sidebar-left .form-item label
+{
+  border: none;
+  color: #333;
+  padding: 0 0 3px 0;
+}
+
+.front.view-display-id-attachment_1 .views-field-name
+{
+  float: none;
+}
+
+.view-blogs .views-row-even, /*Blogs*/
+.view-blogs .views-row-odd /*Blogs*/
+{
+  margin-bottom: 30px;
+  border-top: 1px solid #ccc;
+  padding: 12px 0 0 0;
+}
+
+.view-blogs .views-row-first /*Blogs*/
+{
+  border-top: none;
+}
+
+.poll /* Voting Polls*/
+{
+  background-color: #f2f1e9;
+  margin: 22px 0;
+  padding: 22px;
+}
+
+.poll .bar
+{
+  background-color: #d6d4cc;
+}
+
+.poll .bar .foreground 
+{
+  background-color: #666;
+}
+
+.poll .vote-form .choices
+{
+  width: 100%;
+}
+
+.view-classifieds ul /* Classifieds view */
+{
+  list-style: none;
+}
+
+.view-classifieds ul li/* Classifieds view */
+{
+  margin-bottom: 22px;
+}
+
+.view-classifieds ul li p/* Classifieds view */
+{
+  margin: 0;
+}
+
+.view-forum .views-row-even, /*Blogs*/
+.view-forum .views-row-odd /*Blogs*/
+{
+  margin-bottom: 30px;
+}
+
+.view-news-events .item-list li
+{
+  margin-bottom: 30px;
+}
+
+table.views-view-grid td,
+table.views-view-grid td .views-field-body
+{
+  text-transform: none;
+  color: #666;
+  vertical-align: text-top;
+}
+
+#views-bulk-operations-submit 
+{
+  padding:14px 22px 0 22px;
+}
+
+.view-projects .form-item label
+{
+  display: none;
+}
+
+.field-field-forumcontainer .field-label
+{
+  display: none;
+}
+
+.view-news h3,
+.view-events h3,
+.view .item-list h3
+{
+  margin-bottom: 12px;
+}
+
+ 
+.view-news .item-list ul li p,
+.view-events .item-list ul li p,
+.view .item-list ul li p
+
+{
+  margin: 2px;
+}
+
+.view-news .item-list ul li ,
+.view-events .item-list ul li,
+.view .item-list ul li
+{
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+.view-events .views-field-field-eventdate-value,
+.view-events .views-field-field-timelocation-value
+{
+    font-style: italic;
+    color: #666;
+}
+
+.view-events .views-field-field-timelocation-value
+{
+    margin-bottom: 8px;
+}
+
+.views-field-title
+/*.view-news .views-field-title,
+.view-events .views-field-title,
+.view-classifieds .views-field-title*/
+{
+  list-style: none;
+    font-size: 1.5em; /* 18px x 1.444 = 26px */
+    line-height: 1.444em;
+    font-family: Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
+    font-weight: normal;
+    margin: 0;
+    /*margin-top: 0.769em; /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
+    /*margin-bottom: 0.769em;*/
+}
